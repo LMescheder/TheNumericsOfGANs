@@ -14,22 +14,22 @@ outdir = os.path.join(cwd, 'out/conopt')
 
 args = [
 # Architecture
-'--image-size', '128',
+'--image-size', '160',
 '--output-size', '64',
 '--c-dim', '3',
 '--z-dim', '256',
-'--gf-dim', '64',
-'--df-dim', '64',
+'--gf-dim', '128',
+'--df-dim', '128',
 '--g-architecture', 'resnet',
 '--d-architecture', 'resnet',
 '--gan-type','standard',
 # Training
 '--optimizer', 'conopt',
-'--nsteps', '150000',
+'--nsteps', '1500000',
 '--ntest', '1000',
-'--learning-rate', '1e-4',
-'--reg-param', '10',
-'--batch-size', '64',
+'--learning-rate', '5e-5',
+'--reg-param', '10.',
+'--batch-size', '128',
 '--log-dir', os.path.join(outdir, 'tf_logs'),
 '--sample-dir', os.path.join(outdir, 'samples'),
 # Data set
