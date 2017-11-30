@@ -10,24 +10,25 @@ executable = 'python'
 rootdir = '../..'
 scriptname = 'run.py'
 cwd = os.path.dirname(os.path.abspath(__file__))
-outdir = os.path.join(cwd, 'out/simgd')
+outdir = os.path.join(cwd, 'out/conopt0')
 
 args = [
 # Architecture
 '--image-size', '160',
 '--output-size', '64',
 '--c-dim', '3',
-'--z-dim', '256',
-'--gf-dim', '128',
-'--df-dim', '128',
-'--g-architecture', 'resnet_cf',
-'--d-architecture', 'resnet_cf',
+'--z-dim', '64',
+'--gf-dim', '64',
+'--df-dim', '64',
+'--g-architecture', 'resnet',
+'--d-architecture', 'resnet',
 '--gan-type','standard',
 # Training
-'--optimizer', 'simgd',
-'--nsteps', '150000',
+'--optimizer', 'conopt',
+'--nsteps', '1500000',
 '--ntest', '1000',
-'--learning-rate', '1e-4',
+'--learning-rate', '5e-5',
+'--reg-param', '10.',
 '--batch-size', '128',
 '--log-dir', os.path.join(outdir, 'tf_logs'),
 '--sample-dir', os.path.join(outdir, 'samples'),

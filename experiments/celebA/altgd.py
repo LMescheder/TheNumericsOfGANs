@@ -20,8 +20,8 @@ args = [
 '--z-dim', '256',
 '--gf-dim', '128',
 '--df-dim', '128',
-'--g-architecture', 'resnet',
-'--d-architecture', 'resnet',
+'--g-architecture', 'resnet_cf',
+'--d-architecture', 'resnet_cf',
 '--gan-type','standard',
 # Training
 '--optimizer', 'altgd',

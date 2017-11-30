@@ -10,7 +10,7 @@ executable = 'python'
 rootdir = '../..'
 scriptname = 'run.py'
 cwd = os.path.dirname(os.path.abspath(__file__))
-outdir = os.path.join(cwd, 'out/conopt')
+outdir = os.path.join(cwd, 'out/conopt2')
 
 args = [
 # Architecture
@@ -20,8 +20,8 @@ args = [
 '--z-dim', '256',
 '--gf-dim', '128',
 '--df-dim', '128',
-'--g-architecture', 'resnet',
-'--d-architecture', 'resnet',
+'--g-architecture', 'resnet_cf',
+'--d-architecture', 'resnet_cf',
 '--gan-type','standard',
 # Training
 '--optimizer', 'conopt',

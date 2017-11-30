@@ -4,7 +4,7 @@ from consensus_gan.models import (
     dcgan3, dcgan4,
     dcgan3_nobn, dcgan4_nobn,
     dcgan3_nobn_cf, dcgan4_nobn_cf,
-    resnet,
+    resnet, resnet_cf,
 )
 
 generator_dict = {
@@ -17,6 +17,7 @@ generator_dict = {
     'dcgan3_nobn_cf': dcgan3_nobn_cf.generator,
     'dcgan4_nobn_cf': dcgan4_nobn_cf.generator,
     'resnet': resnet.generator,
+    'resnet_cf': resnet_cf.generator,
 }
 
 discriminator_dict = {
@@ -29,6 +30,7 @@ discriminator_dict = {
     'dcgan3_nobn_cf': dcgan3_nobn_cf.discriminator,
     'dcgan4_nobn_cf': dcgan4_nobn_cf.discriminator,
     'resnet': resnet.discriminator,
+    'resnet_cf': resnet_cf.discriminator,
 }
 
 
