@@ -27,7 +27,7 @@ args = [
 '--optimizer', 'conopt',
 '--nsteps', '1500000',
 '--ntest', '1000',
-'--learning-rate', '5e-5',
+'--learning-rate', '1e-4',
 '--reg-param', '10.',
 '--batch-size', '128',
 '--log-dir', os.path.join(outdir, 'tf_logs'),
