@@ -1,5 +1,5 @@
 # The Numerics of GANs
-This repository contains the code to reproduce the core results from the paper [The Numerics of GANs](https://arxiv.org/abs/1705.10461).
+This repository contains the code to reproduce the core results from the paper [The Numerics of GANs](https://avg.is.tuebingen.mpg.de/publications/mescheder2017nips).
 
 To cite this work, please use
 ```
@@ -10,6 +10,8 @@ To cite this work, please use
   year = {2017}
 }
 ```
+
+You can find further details on [our project page](https://avg.is.tuebingen.mpg.de/research_projects/convergence-and-stability-of-gan-training).
 
 # Dependencies
 This project uses Python 3.5.2. Before running the code, you have to install
